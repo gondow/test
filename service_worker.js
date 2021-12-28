@@ -1,27 +1,13 @@
-// キャッシュファイルの指定
-var CACHE_NAME = 'pwa-sample-caches';
-var urlsToCache = [
-    'https://gondow.github.io/test/',
-];
-
-// インストール処理
-self.addEventListener('install', function(event) {
-    event.waitUntil(
-        caches
-            .open(CACHE_NAME)
-            .then(function(cache) {
-                return cache.addAll(urlsToCache);
-            })
-    );
+self.addEventListener('install', (event) => {
+  console.log('👷', 'install', event);
+  self.skipWaiting();
 });
 
-// リソースフェッチ時のキャッシュロード処理
+self.addEventListener('activate', (event) => {
+  console.log('👷', 'activate', event);
+  return self.clients.claim();
+});
+
 self.addEventListener('fetch', function(event) {
-    event.respondWith(
-        caches
-            .match(event.request)
-            .then(function(response) {
-                return response ? response : fetch(event.request);
-            })
-    );
+  console.log('👷', 'fetch', event);
 });
