@@ -1,7 +1,7 @@
 // キャッシュファイルの指定
 var CACHE_NAME = 'pwa-sample-caches';
 var urlsToCache = [
-    '/https://gondow.github.io/test//',
+    'https://gondow.github.io/test/',
 ];
 
 // インストール処理
