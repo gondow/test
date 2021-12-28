@@ -1,30 +1,31 @@
 {
-  "short_name": "Share Test",
-  "name": "Share Target Test",
-  "share_target": {
-    "action": "target.html",
-    "params": {
-      "title": "title",
-      "text": "text",
-      "url": "url"
-    }
-  },
-  "description": "Web Share Target Demo",
-  "icons": [
-    {
-      "src": "images/icon.jpg",
-      "sizes": "192x192",
-      "type": "image/png"
+    "short_name": "Share Test",
+    "name": "Share Target Test",
+    "share_target": {
+	"action": "target.html",
+	"params": {
+	    "title": "title",
+	    "text": "text",
+	    "url": "url"
+	}
     },
-    {
-      "src": "images/icon.jpg",
-      "sizes": "512x512",
-      "type": "image/png"
-    }
-  ],
-  "start_url": "/test",
-  "background_color": "#f3e5f5",
-  "display": "standalone",
-//  "scope": "/",
-  "theme_color": "#4a148c"
+    "description": "Web Share Target Demo",
+    "icons": [
+	{
+	    "src": "images/icon.jpg",
+	    "sizes": "192x192",
+	    "type": "image/png"
+	},
+	{
+	    "src": "images/icon.jpg",
+	    "sizes": "512x512",
+	    "type": "image/png"
+	}
+    ],
+    "start_url": "https://gondow.github.io/test",
+    "background_color": "#f3e5f5",
+    "display": "standalone",
+    "scope": "https://gondow.github.io/test",
+    //  "scope": "/",
+    "theme_color": "#4a148c"
 }
