@@ -22,10 +22,9 @@
 	    "type": "image/png"
 	}
     ],
-    "start_url": "https://gondow.github.io/test",
+    "start_url": "/",
     "background_color": "#f3e5f5",
     "display": "standalone",
-    "scope": "https://gondow.github.io/test",
     //  "scope": "/",
     "theme_color": "#4a148c"
 }
